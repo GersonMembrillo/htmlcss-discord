@@ -188,6 +188,25 @@ footer{
   color: var(--prime-white);
 }
 
-ul{
-  color: var(--prime-white);
+li{
+  padding-top: 10px;
 }
+
+.Li{
+font-size: 20px;
+font-family: strong;
+}
+
+.li1{
+  padding-top: 0;
+  color: var(--purple-discord);
+}
+
+.top{
+  padding: 40px 0;
+}
+
+.bottom{
+  padding: 20px 0 40px;
+}
+
