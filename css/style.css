@@ -55,16 +55,16 @@ header{
   background-position: center;
 }
 
-/* per separare i pulsanti nav */
-header nav a{
-  padding: 5px 10px;
-}
-
 /* per colorare la nav */
 nav a, .btn{
   color: var(--prime-white);
   text-decoration: none;
   display: inline-block;
+}
+
+/* per separare i pulsanti nav */
+header nav a, .btn.btn-small {
+  padding: 5px 10px;
 }
 
 .btn{
@@ -84,7 +84,6 @@ nav a, .btn{
 .content{
   max-width: 700px;
   color: var(--prime-white);
-  padding: 30px 15px;
 }
 
 .textcenter{
@@ -129,6 +128,19 @@ nav a, .btn{
 .reverse{
   flex-flow: row-reverse wrap;
 }
+
+.wave{
+  height: 100px;
+  background-image: url('../img/wave.svg');
+  filter: opacity(0.04);
+}
+
+.wave-down {
+  height: 100px;
+  background-image: url('../img/wave.svg');
+  transform: rotate(180deg);
+  transform: scaleY(-1);
+  filter: opacity(0.04);}
 
 /* footer */
 footer{
