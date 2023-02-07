@@ -175,15 +175,10 @@ h3{
   color: white;
 }
 
-.Mtop{
-  margin-top: 40px;
+.Pbottom{
+  padding-bottom: 40px;
 }
-
-.Mbottom{
-  margin-bottom: 40px;
-}
-
-section{
+.M{
   margin: 40px 0;
 }
 
