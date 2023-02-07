@@ -33,6 +33,14 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* per allineare (lunghezza) */
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
 /* HEADER */
 header{
   background-color: var(--blu-header);
@@ -43,9 +51,8 @@ header{
   background-image: url('../img/jumbo.png');
   min-height: 500px;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* per separare i pulsanti nav */
@@ -53,34 +60,25 @@ header nav a{
   padding: 5px 10px;
 }
 
-.btn{
-  background-color: var(--prime-white);
-  color: var(--black-text);
-  border-radius: 20px;
-}
-
-.btnA {
-  background-color: var(--prime-white);
-  color: var(--black-text);
-  border-radius: 20px;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-.btnB {
-  background-color: var(--black-text);
-  color: var(--prime-white);
-  border-radius: 20px;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
 /* per colorare la nav */
-nav a{
+nav a, .btn{
   color: var(--prime-white);
   text-decoration: none;
   display: inline-block;
 }
+
+.btn{
+  background-color: var(--prime-white);
+  color: var(--black-text);
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.btn-black {
+  background-color: var(--black-text);
+  color: var(--prime-white);
+}
+
 
 /* contenuto header al centro */
 .content{
@@ -94,6 +92,11 @@ nav a{
   color: var(--prime-white);
 }
 
+.content p{
+  padding: 15px 30px;
+  line-height: 1.8;
+}
+
 /* MAIN */
 
 /* even sono i section pari */
@@ -101,18 +104,14 @@ nav a{
   background-color: var(--light-grey);
 }
 
-/* per allineare (lunghezza) */
-.flex{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-}
-
 /* per allineare nel centro (altezza) */
 .align{
   align-items: center;
   align-content: center;
+}
+/* allineare centro (lunghezza) */
+.justify{
+  justify-content: center;
 }
 
 .text{
