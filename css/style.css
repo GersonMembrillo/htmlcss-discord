@@ -123,6 +123,12 @@ header nav a, .btn.btn-small {
 
 .right{
   width: 40%;
+  padding: 40px 40px 40px 0;
+}
+
+.right p{
+  line-height: 1.3;
+  padding-top: 10px;
 }
 
 .reverse{
@@ -140,10 +146,53 @@ header nav a, .btn.btn-small {
   background-image: url('../img/wave.svg');
   transform: rotate(180deg);
   transform: scaleY(-1);
-  filter: opacity(0.04);}
+  filter: opacity(0.04);
+}
+
+.big{
+  text-align: center;
+}
+
+.big p{
+  width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h3{
+  background-image: url('../img/stars.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  max-height: 30px auto;
+  padding-bottom: 10px;
+}
+
+.btn-main{
+  background-color: var(--purple-discord);
+  color: white;
+}
+
+.Mtop{
+  margin-top: 40px;
+}
+
+.Mbottom{
+  margin-bottom: 40px;
+}
+
+section{
+  margin: 40px 0;
+}
 
 /* footer */
 footer{
   background-color: var(--grey-footer);
+  color: var(--prime-white);
+}
+
+ul{
   color: var(--prime-white);
 }
